@@ -7,6 +7,7 @@ Correction du TP sur le développement d'un thème WordPress.
 - Templates / Conditionnal tags
 - Chargement des scripts avec `enqueue_scripts`
 - La Boucle Wordpress
+- Requête personnalisée avec WP_Query, meta queries
 - Custom Post Types :
 	- custom taxonomies (catégories et tags)
 - Custom fields (metadata)
@@ -14,9 +15,9 @@ Correction du TP sur le développement d'un thème WordPress.
 - Filtrer des résultats
 - Twitter Bootstrap pour la mise en forme
 
-> **ATTENTION :** Ce dépôt ne contient que les fichiers du thème.
-
 ## Pour utiliser ce thème, vous devez :
+
+> **ATTENTION :** Ce dépôt ne contient que les fichiers du thème.
 
 1. Créer une base de donnée pour ce site (par exemple `wp_garage`)
 2. Faire une installation de WordPress dans votre `localhost`
