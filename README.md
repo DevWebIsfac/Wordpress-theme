@@ -1,6 +1,6 @@
 # Wordpress-theme
 
-Correction du TP sur la développement d'un thème avec le CMS WordPress.
+Correction du TP sur le développement d'un thème WordPress.
 
 ## Notions abordées :
 
