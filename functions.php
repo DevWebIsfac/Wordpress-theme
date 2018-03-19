@@ -20,25 +20,25 @@
 	function wpg_title( $title, $sep ){
 		global $post;
 		if ( is_home() ) {
-			$title= 'Actualités';
+			$title = __('Actualités', THEME_NAME_SPACE);
 		}
 		elseif( is_post_type_archive('agence') ) {
-			$title= 'Agences';			
+			$title = __('Agences', THEME_NAME_SPACE);
 		}
 		elseif( is_post_type_archive('annonce') ) {
-			$title= 'Annonces';			
+			$title = __('Annonces', THEME_NAME_SPACE);
 		}
 		else {
 			$title = $post->post_title;
 		}
 		if (is_singular('annonce')) {
-			$title .= ' ' . number_format(get_post_meta( $post->ID, 'wpg_annonce_prix', true ),0,',',' ').' € ' . $sep . ' Annonces';
+			$title .= ' ' . number_format(get_post_meta( $post->ID, 'wpg_annonce_prix', true ),0,',',' ').' € ' . $sep . ' '.__('Annonces', THEME_NAME_SPACE);
 		}
 		if (is_singular('post')) {
-			$title .= ' ' . $sep . ' Actualités ';
+			$title .= ' ' . $sep . ' '.__('Actualités', THEME_NAME_SPACE).' ';
 		}
 		if (is_singular('agence')) {
-			$title .= ' ' . $sep . ' Agences ';
+			$title .= ' ' . $sep . ' '.__('Agences', THEME_NAME_SPACE).' ';
 		}
 		$title .= ' ' . $sep . ' ' . get_bloginfo('name');
 
