@@ -1,0 +1,145 @@
+/*
+Theme Name: WP Garage
+Version: 1.0;
+Author: Manuel Balland;
+*/
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+.logo {
+	display: block;
+}
+
+header .logo {
+	flex-basis: 60px;
+	flex-shrink: 0;
+}
+
+header {
+	border-bottom: 4px solid #65C5EF;
+}
+
+
+.navbar-light .navbar-nav .active>.nav-link {
+	font-weight: 600;
+	color: #65C5EF;
+}
+
+footer {
+	background-color: #65C5EF;
+}
+
+footer .credits {
+	background-color: #349cd3;
+}
+
+footer a {
+	color: #fff;
+}
+
+footer a:hover,
+footer .nav-link:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.card-title {
+	/*min-height: 2.25em;*/
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.card-title h2 {
+	font-size: 18px;
+	margin: 0;
+}
+
+.card-img-link {
+	position: relative;
+}
+
+.card-img-link:after {
+	content:'';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 6px;
+	background-color: #65C5EF;
+	transform: scaleX(0);
+	transition: all 0.3s ease-out;
+}
+
+.card-img-link:hover:after {
+	transform: scaleX(1);
+}
+
+.card-title a:not(.badge){
+	color: #000;
+}
+
+.card-text {
+	font-size: 13px;
+}
+
+.actu-title a {
+	color: #000;
+}
+
+.sidebar h4.actu-title {
+	line-height: 0.7;
+}
+.sidebar .actu-title a {
+	font-size: 12px;
+}
+
+.cats-annonce, .cats-caracteristiques {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.single-annonce .prix {
+	font-size: 18px;
+}
+
+.card .prix {
+	position: absolute;
+	display: inline-block;
+	top: 0.5rem;
+	right: 0.5rem;
+	font-size: 16px;
+}
+
+.carousel-item img{
+	margin: 0 auto;
+}
+
+.sidebar-annonce {
+	font-size: 0.8em;
+}
+
+.sidebar-annonce .list-group-item{
+	padding: .5rem 0.75rem;
+}
+
+.list-group-item.active .badge-secondary {
+	background-color: #fff;
+	color: #007bff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+	font-family: "Ionicons";
+	content:"\f125";
+}
+
+.navbar .form-inline {
+	flex-wrap: nowrap;
+}
+
+.page-link {
+	height: 100%;
+}
