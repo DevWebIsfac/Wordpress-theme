@@ -4,28 +4,28 @@ function create_annonce_box_content() {
 	global $post;
 	?>
 	<label class="meta-box-item-title" for="prix">
-		<h4>Prix</h4>
+		<h4><?php _e('Prix',THEME_NAME_SPACE); ?></h4>
 	</label>
 	<div class="meta-box-item-content">
 		<input type="number" name="prix" id="prix" value="<?php echo get_post_meta( $post->ID, 'wpg_annonce_prix', true ); ?>">
 	</div>
 
 	<label class="meta-box-item-title" for="kilo">
-		<h4>Kilométrage</h4>
+		<h4><?php _e('Kilométrage',THEME_NAME_SPACE); ?></h4>
 	</label>
 	<div class="meta-box-item-content">
 		<input type="number" name="kilo" id="kilo" value="<?php echo get_post_meta( $post->ID, 'wpg_annonce_kilo', true ); ?>">
 	</div>
 
 	<div class="meta-box-item-title">
-		<h4>Genre</h4>
+		<h4><?php _e('Genre',THEME_NAME_SPACE); ?></h4>
 	</div>
 	<div class="meta-box-item-content">
 		<input type="radio" name="genre" id="neuf" value="neuf" <?php if(get_post_meta($post->ID,'wpg_annonce_genre', true)=='neuf'){ echo 'checked="checked"'; } ?>><label for="neuf">Neuf</label>
 		<input type="radio" name="genre" id="occasion" value="occasion" <?php if(get_post_meta($post->ID,'wpg_annonce_genre', true)=='occasion'){ echo 'checked="checked"'; } ?>><label for="occasion">Occasion</label>
 	</div>
 
-	<div class="meta-box-item-title"><h4>Diaporama</h4></div>
+	<div class="meta-box-item-title"><h4><?php _e('Diaporama',THEME_NAME_SPACE); ?></h4></div>
 	<div style="display: flex; flex-wrap: wrap;">
 		<?php for ($i=1; $i < 5 ; $i++) : ?>
 			<div class="meta-box-item-content" style="box-sizing: border-box; flex-basis:25%; min-width:140px; padding: 0.5rem;">

@@ -3,7 +3,7 @@
 function create_accueil_box_content() {
 	global $post;
 	?>
-	<div class="meta-box-item-title"><h4>Diaporama</h4></div>
+	<div class="meta-box-item-title"><h4><?php _e('Diaporama',THEME_NAME_SPACE); ?></h4></div>
 	<div style="display: flex; flex-wrap: wrap;">
 		<?php for ($i=1; $i < 5 ; $i++) : ?>
 			<div class="meta-box-item-content" style="box-sizing: border-box; flex-basis:25%; min-width:140px; padding: 0.5rem;">

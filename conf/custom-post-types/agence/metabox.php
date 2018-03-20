@@ -4,7 +4,7 @@ function create_agence_box_content() {
 	global $post;
 	?>
 	<label class="meta-box-item-title" for="gmaps">
-		<h4>Lien Google Maps</h4>
+		<h4><?php _e('Lien Google Maps',THEME_NAME_SPACE); ?></h4>
 	</label>
 	<div class="meta-box-item-content">
 		<textarea name="gmaps" id="gmaps" style="width:100%; height:120px;">

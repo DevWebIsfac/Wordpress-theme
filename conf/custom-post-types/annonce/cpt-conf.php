@@ -4,10 +4,10 @@ function add_cpt_annonce(){
 
 	// On créé notre type de post personnalisé
 	$labels = array(
-		'name'               => _x( 'Annonces', 'post type general name', THEME_NAME_SPACE ),
-		'singular_name'      => _x( 'Annonce', 'post type singular name', THEME_NAME_SPACE ),
-		'menu_name'          => _x( 'Annonces', 'admin menu', THEME_NAME_SPACE ),
-		'name_admin_bar'     => _x( 'Annonce', 'add new on admin bar', THEME_NAME_SPACE ),
+		'name'               => _x( 'Annonces', 'Nom du type de post personnalisé au pluriel', THEME_NAME_SPACE ),
+		'singular_name'      => _x( 'Annonce', 'Nom du type de post personnalisé au singulier', THEME_NAME_SPACE ),
+		'menu_name'          => _x( 'Annonces', 'Nom dans le menu du back-office', THEME_NAME_SPACE ),
+		'name_admin_bar'     => _x( 'Annonce', 'Ajouter un nouveau dans l\'admin bar', THEME_NAME_SPACE ),
 		'add_new'            => _x( 'Ajouter', 'Annonce', THEME_NAME_SPACE ),
 		'add_new_item'       => __( 'Ajouter une nouvelle annonce', THEME_NAME_SPACE ),
 		'new_item'           => __( 'Nouvelle annonce', THEME_NAME_SPACE ),

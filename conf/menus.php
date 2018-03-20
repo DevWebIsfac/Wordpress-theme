@@ -1,6 +1,6 @@
 <?php
 
 register_nav_menus( array(
-	'main' => 'Menu principal',
-	'footer-nav' => 'Menu de pied de page',
+	'main' => __('Menu principal',THEME_NAME_SPACE),
+	'footer-nav' => __('Menu de pied de page',THEME_NAME_SPACE),
 ) );

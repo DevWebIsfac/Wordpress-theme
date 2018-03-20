@@ -17,6 +17,9 @@
 	require_once( get_template_directory(). '/conf/custom-post-types/actualites.php');
 	require_once( get_template_directory(). '/conf/custom-post-types/annonce/filters.php');
 
+
+	// Personnalisation du title
+
 	function wpg_title( $title, $sep ){
 		global $post;
 		if ( is_home() ) {
@@ -27,6 +30,9 @@
 		}
 		elseif( is_post_type_archive('annonce') ) {
 			$title = __('Annonces', THEME_NAME_SPACE);
+		}
+		elseif( is_tax() ) {
+			$title = single_term_title();
 		}
 		else {
 			$title = $post->post_title;
@@ -46,5 +52,11 @@
 	}
 	add_filter( 'wp_title', 'wpg_title', 10, 2 );
 
+
+	// Clean-up Wordpress = supprime emoji
+	remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); 
+	remove_action( 'admin_print_scripts', 'print_emoji_detection_script' ); 
+	remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
+	remove_action( 'admin_print_styles', 'print_emoji_styles' );
 	
  ?>

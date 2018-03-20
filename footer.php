@@ -9,7 +9,7 @@
 	</div>
 	<div class="row credits text-light p-2">
 		<div class="col">&copy; WP Garage</div>
-		<div class="col text-right"><a href="<?php echo admin_url(); ?>">Connexion</a></div>
+		<div class="col text-right"><a href="<?php echo admin_url(); ?>"><?php __('Connexion', THEME_NAME_SPACE) ?></a></div>
 	</div>
 </footer>
 
